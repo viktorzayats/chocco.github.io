@@ -1,0 +1,11 @@
+$height: 100vh;
+
+.greeting {
+    height: $height;
+    background-color: #61c4d9;
+    background-image: url('/images/pattern.png');
+    background-repeat: no-repeat;  
+    background-position: right;
+    background-size: contain;          
+    color: #ffffff;
+}

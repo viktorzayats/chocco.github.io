@@ -1,0 +1,85 @@
+.features {
+    height: $height;
+    background: url('/images/pattern_leave.png') no-repeat left 45%;
+}
+
+.feature__img {
+    position: absolute;
+    top: 175%;
+}
+
+.features_container {
+    padding-top: 100px;
+}
+
+.features__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features__item {
+    max-width: 275px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+
+    &:last-child::after {
+        display: none;
+    }
+
+    &::after {
+        content: "";
+        background: url('/images/logo/points.png') no-repeat;
+        width: 67px;
+        height: 21px;
+        position: absolute;
+        right: -65px;
+        top: 60px;
+    }
+}
+
+
+
+.features__aside {
+    text-align: center;
+}
+
+.features__pic {
+    width: 125px;
+    height: 125px;
+    background-color: #f2f5f4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.features__icon-men {
+    max-width: 66px;
+    max-height: 69px;
+}
+
+.features__icon-smile {
+    max-width: 70px;
+    max-height: 69px;
+}
+
+.features__icon-hand {
+    max-width: 75px;
+    max-height: 64px;
+}
+
+.features__subtitle {
+    margin-bottom: 30px;
+    color: #000000;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.features__desc {
+    font-size: 18px;
+    font-weight: 300;
+    color: #666666;
+}

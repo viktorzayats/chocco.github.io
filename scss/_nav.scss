@@ -1,0 +1,15 @@
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    margin-right: 30px;
+}
+.nav__item:last-child {
+    margin: 0;
+}
+
+.nav__link {
+    color: #ffffff;
+    font-size: 18px;
+}

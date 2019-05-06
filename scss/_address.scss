@@ -1,0 +1,17 @@
+.address {
+    font-style: normal;
+    font-size: 24px;
+}
+
+.address__link {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    &:before {
+        content: "";
+        width: 12px;
+        height: 11px;
+        background: url('/images/logo/phone_.png') no-repeat;
+        margin-right: 6px;
+    }
+}

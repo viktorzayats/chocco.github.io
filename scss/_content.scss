@@ -1,0 +1,23 @@
+.content {
+    width: 57%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+}
+.title {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+.title_wihte {
+    margin-bottom: 15px;
+}
+
+.content__text {
+    font-size: 21px;
+    margin-bottom: 32px;
+}
+

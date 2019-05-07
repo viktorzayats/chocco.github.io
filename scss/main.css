@@ -409,7 +409,14 @@ body {
   margin: 0 auto;
   width: 95%;
   max-width: 940px;
-  height: 100%; }
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 ul, p {
   margin: 0;
@@ -425,6 +432,7 @@ button {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  padding: 0;
   font-weight: normal; }
 
 a {
@@ -441,6 +449,9 @@ img {
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+.section {
+  height: 100vh; }
 
 .greeting {
   height: 100vh;
@@ -512,20 +523,24 @@ img {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-flow: row-reverse;
-  flex-flow: row-reverse; }
+  flex-flow: row-reverse;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
 
 .content {
   width: 57%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  position: relative; }
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
 
 .title {
   font-size: 60px;
@@ -541,17 +556,13 @@ img {
   margin-bottom: 32px; }
 
 .btn {
-  line-height: 58px;
+  padding: 23px 35px;
   font-size: 19px;
   text-transform: uppercase;
   border-radius: 35px;
-  font-weight: 800;
-  max-width: 156px;
-  width: 100%;
-  text-align: center; }
+  font-weight: 800; }
 
 .btn_greeting {
-  margin-bottom: 70px;
   background-color: #fff;
   color: #0f5a47; }
 
@@ -572,6 +583,10 @@ img {
   position: absolute;
   bottom: -5%;
   right: 5%; }
+
+.description_margin {
+  margin-top: auto;
+  margin-bottom: 50px; }
 
 .description__list {
   display: -webkit-box;
@@ -611,7 +626,6 @@ img {
   font-size: 16px; }
 
 .features {
-  height: 100vh;
   background: url("/images/pattern_leave.png") no-repeat left 45%; }
 
 .feature__img {
@@ -743,7 +757,8 @@ img {
   position: relative;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  overflow: hidden; }
   .reviews__content::before {
     content: "";
     width: 100px;
@@ -754,10 +769,16 @@ img {
     background-color: #fff; }
 
 .reviews__avatar {
-  max-width: 255px;
-  max-height: 260px;
+  width: 255px;
+  height: 260px;
   overflow: hidden;
   margin-right: 20px; }
+
+.reviews__photo {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
 
 .reviews__desc {
   margin-right: auto; }

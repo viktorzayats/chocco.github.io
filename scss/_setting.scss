@@ -7,18 +7,13 @@ body {
     font-family: "Alegreya Sans";
     margin: 0;
     padding: 0;
+    line-height: 1.42;
 }
 
 .wrapper {
-    overflow: hidden;
     min-height: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
-.wrapper__content {
-    flex: 1;
-}
 
 .container {
     margin: 0 auto;
@@ -27,6 +22,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 ul, p {

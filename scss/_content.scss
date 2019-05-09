@@ -1,9 +1,8 @@
 .content {
-    width: 57%;
-    position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+}
+.content__promo {
+    flex: .5;
 }
 .title {
     font-size: 60px;

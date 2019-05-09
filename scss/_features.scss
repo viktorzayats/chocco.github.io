@@ -1,5 +1,18 @@
 .features {
+    position: relative;
     background: url('/images/pattern_leave.png') no-repeat left 45%;
+
+
+    &::after {
+        content: "";
+        width: 161px;
+        height: 315px;
+        background: url('/images/raspberries.png') no-repeat;
+        position: absolute;
+        left: 0;
+        bottom: -115px;
+        }
+    
 }
 
 .feature__img {
@@ -7,9 +20,6 @@
     top: 175%;
 }
 
-.features_container {
-    padding-top: 100px;
-}
 
 .features__list {
     display: flex;

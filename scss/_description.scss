@@ -1,7 +1,4 @@
-.description_margin {
-    margin-top: auto;
-    margin-bottom: 50px;
-}
+
 
 .description__list {
     display: flex;
@@ -41,5 +38,6 @@
 
 .description__text {
     font-size: 16px;
+    max-width: 84px;
 
 }

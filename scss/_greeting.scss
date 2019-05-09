@@ -1,11 +1,33 @@
-$height: 100vh;
-
 .greeting {
-    height: $height;
-    background-color: #61c4d9;
-    background-image: url('/images/pattern.png');
-    background-repeat: no-repeat;  
-    background-position: right;
-    background-size: contain;          
+    background: url('/images/candy.png') 85% 50%,
+    url('/images/pattern.png') right bottom,#61c4d9;
+    background-repeat: no-repeat;
+    background-size: 40%;
     color: #ffffff;
+}
+
+.greating__container {
+    padding: 25px 0 50px 0;
+    justify-content: space-between;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 465px;
+        height: 345px;
+        background: url(/images/leaves.png) no-repeat;
+        position: absolute;
+        bottom: -40px;
+        right: -50px;
+    }
+
+    &::after {
+        content: "";
+        width: 60px;
+        height: 100px;
+        background: url(/images/leave.png) no-repeat;
+        position: absolute;
+        bottom: -40px;
+        left: -50px;
+    }
 }

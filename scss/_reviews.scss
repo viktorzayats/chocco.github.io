@@ -5,10 +5,11 @@
     &:after {
         content: "";
         height: 422px;
-        width: 154px;
+        width: 160px;
         background: url('/images/2-layers.png') no-repeat;
         position: absolute;
         bottom: -25%;
+        z-index: 1;
     }
 }
 
@@ -93,6 +94,7 @@
     height: 94px;
     border-radius: 50%;
     margin-right: 40px;
+
 
     &:last-child {
         margin: 0;

@@ -1,0 +1,68 @@
+.accordeon-menu {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    max-width: 730px;
+}
+
+.accordeon-menu__list, .accordeon-menu__item,
+.accordeon-menu__link {
+    display: flex;
+    height: 100%;
+
+}
+
+.accordeon-menu__link {
+    width: 100px;
+    align-items: flex-end;
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+.accordeon-menu__link_first {
+    background: linear-gradient(rgba(0,0,0,0.6)), 
+                url('/images/kokos.png') no-repeat;
+    background-size: cover;
+    background-position: -130px;
+}
+
+.accordeon-menu__link_second {
+    background: linear-gradient(rgba(0,0,0,0.6)), 
+                url('/images/calamondin.png') no-repeat;
+    background-size: cover;
+    background-position: -230px;
+}
+
+.accordeon-menu__link_third {
+    background: linear-gradient(rgba(0,0,0,0.6)), 
+                url('/images/shutterstock.png') no-repeat;
+    background-size: cover;
+    background-position: -270px;
+}
+
+.accordeon-menu__link_active + .accordeon-menu__drop {
+    width: 430px;
+    transition: 0.8s;
+}
+
+.accordeon-menu__drop {
+    width: 0;
+    overflow: hidden;
+    background: rgba(0,0,0,0.75);
+}
+
+.accordeon-menu__drop p {
+    padding: 55px 25px;
+    min-width: 430px;
+}
+
+.accordeon-menu__link span {
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 48px;
+}

@@ -1,0 +1,134 @@
+.form {
+    display: flex;
+    font-size: 18px;
+    color: #0f5a47;
+}
+
+.form__left, .form__right {
+    width: 50%;
+}
+
+.form__row {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.form__row_radio {
+    margin-bottom: 40px;
+}
+
+.form__label {
+    flex: 1;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.form__input {
+    width: 100%;
+    border: none;
+    padding: 20px 10px;
+    color: #000000;
+}
+
+.form__text {
+    display: flex;
+}
+
+.form__field {
+    height: 180px;
+    border: none;
+    resize: none;
+    flex: 1;
+    width: 100%
+}
+
+.form__input:focus, .form__field:focus {
+    border: 3px solid #dde3bd;
+}
+
+
+.form__label_radio {
+    display: flex;
+    position: relative;
+    flex: 0;
+    margin-bottom: 8px;
+}
+
+.form__radio, .form__checkbox {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+}
+
+.form__radio-fake {
+    display: flex;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+
+    &::before {
+        content: "";
+        display: flex;
+        height: 0;
+        width: 0;
+        border-radius: 50%;
+        background-color: #0f5a47;
+        transition: .2s;
+    }
+}
+
+.form__radio:checked+.form__radio-fake::before {
+    height: 13px;
+    width: 13px;
+}
+
+.form__label-name {
+    display: flex;
+    width: max-content;
+}
+
+.form__label_checkbox {
+    display: flex;
+    position: relative;
+
+}
+
+.form__checkbox-fake {
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+        content: "";
+        display: flex;
+        height: 0;
+        width: 0;
+    }
+
+}
+
+.form__checkbox:checked + .form__checkbox-fake::before {
+    width: 8px;
+    height: 4px;
+    border-left: 3px solid #0f5a47;
+    border-bottom: 3px solid #0f5a47;
+    transform: rotate(-45deg);
+}
+
+.form__row_coment {
+    margin-bottom: 30px;
+}
+
+.form__row_coment .form__label {
+    margin-right: 0;
+}

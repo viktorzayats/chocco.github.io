@@ -3,15 +3,41 @@
     font-size: 24px;
 }
 
+.address_header {
+    display: flex;
+    align-items: center;
+}
+
+.address__phone {
+    width: 11px;
+    height: 11px;
+    margin-right: 6px;
+    fill: #ffffff;
+}
+
 .address__link {
     color: #ffffff;
     display: flex;
     align-items: center;
-    &:before {
-        content: "";
-        width: 12px;
-        height: 11px;
-        background: url('/images/logo/phone_.png') no-repeat;
-        margin-right: 6px;
-    }
+}
+
+.adress_footer {
+    font-size: 21px;
+}
+
+.addres__link_footer {
+    color: #0f5a47;
+}
+
+.adress__text {
+    color: #010101;
+}
+
+.address__contakt-phone {
+    display: flex;
+    align-items: center;
+}
+
+.address__contakt-phone .address__phone {
+    fill: #0f5a47;
 }

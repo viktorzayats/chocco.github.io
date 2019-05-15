@@ -1,0 +1,38 @@
+.delivery {
+    background: url('/images/bg-delivery.png') no-repeat;
+    background-size: cover;
+
+    &::before {
+        content: "";
+        width: 242px;
+        height: 264px;
+        background: url('/images/blackberry.png') no-repeat;
+        position: absolute;
+        right: -45px;
+        top: -135px;
+    }
+}
+
+.delivery__container {
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        background: url('/images/berry.png') no-repeat;
+        position: absolute;
+        left: -50px;
+        bottom: 55px;
+    }
+
+    &::after {
+        content: "";
+        width: 135px;
+        height: 188px;
+        background: url('/images/leave-2.png') no-repeat;
+        position: absolute;
+        right: -65px;
+        bottom: 105px;
+    }
+}

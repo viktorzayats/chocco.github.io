@@ -1,0 +1,22 @@
+.team {
+
+    &::before {
+        content: "";
+        width: 196px;
+        height: 578px;
+        background: url('/images/blueberries.png') no-repeat;
+        position: absolute;
+        right: 0;
+        top: -30%;
+    }
+
+    &:after {
+        content: "";
+        width: 104px;
+        height: 114px;
+        background: url('/images/1raspberries.png') no-repeat;
+        position: absolute;
+        bottom: -5%;
+        z-index: 1;
+    }
+}

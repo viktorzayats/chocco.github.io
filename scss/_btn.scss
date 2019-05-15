@@ -10,4 +10,17 @@
     background-color: #fff;
     color: #0f5a47;
     display: inline-flex;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn_delivery {
+    background-color: #0f5a47;
+    color: #ffffff;
+}
+
+.btn_reset {
+    text-transform:none;
+    color: #0f5a47;
+    font-size: 18px;
+    font-weight: 400;
 }

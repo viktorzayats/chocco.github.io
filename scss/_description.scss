@@ -41,3 +41,25 @@
     max-width: 84px;
 
 }
+
+.description__svg  {
+    fill: none;
+    stroke:#b0f7ff;
+    stroke-width:0.5;
+}
+
+.description__svg_leave {
+    width: 44px;
+    height: 41px;
+}
+
+.description__svg_car {
+    fill: #61c4d9;
+    width: 50px;
+    height: 40px;
+}
+
+.description__svg_ruler {
+    width: 42px;
+    height: 42px;
+}

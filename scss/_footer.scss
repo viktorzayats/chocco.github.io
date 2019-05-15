@@ -1,0 +1,22 @@
+.footer {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    padding: 24px 0;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__left, .footer__right {
+    flex: 1;
+}
+
+.footer__right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}

@@ -1,5 +1,5 @@
 .accordeon-team {
-    max-height: 400px;
+    height: auto;
 }
 
 .accordeon-team__list {
@@ -9,19 +9,19 @@
 }
 
 .accordeon-team__item {
-    max-width: 223px;
+    max-width: rem(223px);
     text-align: center;
 
     &:nth-child(even) {
-        margin-top: 50px;
+        margin-top: rem(50px);
     }
 }
 
 .accordeon-team__avatar {
-    width: 223px;
-    height: 289px;
+    width: rem(223px);
+    height: rem(289px);
     overflow: hidden;
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
 }
 
 .accordeon-team__photo {
@@ -32,7 +32,7 @@
 
 .accordeon-team__name {
     color: #323232;
-    font-size: 21px;
+    font-size: rem(21px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,20 +46,11 @@
         border: 5px solid transparent;
         border-top-color: #0f5a47;
         border-bottom-width: 0;
-        margin-left: 5px;
+        margin-left: rem(5px);
         transition: .4s;
     }
-
-   /* &:hover + .accordeon-team__drop {
-        height: 75px;
-        transition: .4s;
-    }*/
 }
 
-/*.accordeon-team__name:hover::after {
-    transform: rotate(-180deg);
-    transition: .4s;
-}*/
 
 .accordeon-team__drop {
     height: 0;
@@ -69,7 +60,7 @@
 
 .accordeon-team__position {
     color: #281e1e;
-    font-size: 18px;
+    font-size: rem(18px);
 }
 
 .accordeon-team__text {
@@ -77,12 +68,12 @@
     font-weight: 300;
 }
 
-.accordeon-team__name_active + .accordeon-team__drop {
-    min-height: 75px;
+.accordeon-team__item_active .accordeon-team__drop {
+    height: auto;
     transition: .4s;
 }
 
-.accordeon-team__name_active::after {
+.accordeon-team__item_active .accordeon-team__name::after {
     transform: rotate(-180deg);
     transition: .4s;
 }

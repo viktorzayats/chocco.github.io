@@ -2,8 +2,8 @@
 
     &::before {
         content: "";
-        width: 196px;
-        height: 578px;
+        width:  rem(196px);
+        height: rem(578px);
         background: url('/images/blueberries.png') no-repeat;
         position: absolute;
         right: 0;
@@ -12,8 +12,8 @@
 
     &:after {
         content: "";
-        width: 104px;
-        height: 114px;
+        width: rem(104px);
+        height: rem(114px);
         background: url('/images/1raspberries.png') no-repeat;
         position: absolute;
         bottom: -5%;

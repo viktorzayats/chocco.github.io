@@ -5,12 +5,12 @@
 
     &::after {
         content: "";
-        width: 161px;
-        height: 315px;
+        width: rem(161px);
+        height: rem(315px);
         background: url('/images/raspberries.png') no-repeat;
         position: absolute;
         left: 0;
-        bottom: -115px;
+        bottom: rem(-115px);
         }
     
 }
@@ -27,7 +27,7 @@
 }
 
 .features__item {
-    max-width: 275px;
+    max-width: rem(275px);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -40,11 +40,11 @@
     &::after {
         content: "";
         background: url('/images/logo/points.png') no-repeat;
-        width: 67px;
-        height: 21px;
+        width: rem(67px);
+        height: rem(21px);
         position: absolute;
-        right: -65px;
-        top: 60px;
+        right: rem(-65px);
+        top: rem(60px);
     }
 }
 
@@ -55,40 +55,40 @@
 }
 
 .features__pic {
-    width: 125px;
-    height: 125px;
+    width: rem(125px);
+    height: rem(125px);
     background-color: #f2f5f4;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: rem(35px);
 }
 
 .features__icon-men {
-    max-width: 66px;
-    max-height: 69px;
+    max-width: rem(66px);
+    max-height: rem(69px);
 }
 
 .features__icon-smile {
-    max-width: 70px;
-    max-height: 69px;
+    max-width: rem(70px);
+    max-height: rem(69px);
 }
 
 .features__icon-hand {
-    max-width: 75px;
-    max-height: 64px;
+    max-width: rem(75px);
+    max-height: rem(64px);
 }
 
 .features__subtitle {
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
     color: #000000;
-    font-size: 27px;
+    font-size: rem(27px);
     font-weight: 700;
 }
 
 .features__desc {
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 300;
     color: #666666;
 }
@@ -100,16 +100,16 @@
 }
 
 .features__svg_men {
-    width: 66px;
-    height: 69px;
+    width: rem(66px);
+    height: rem(69px);
 }
 
 .features__svg_smile {
-    width: 70px;
-    height: 70px;
+    width: rem(70px);
+    height: rem(70px);
 }
 
 .features__svg_hand {
-    width: 75px;
-    height: 64px;
+    width: rem(75px);
+    height: rem(64px);
 }

@@ -15,7 +15,7 @@
 
 
 .title_reviews {
-    font-size: 48px;
+    font-size: 4rem(8px);
     color: #0d0d0d;
     text-align: center;
     margin-bottom: 55px;
@@ -73,14 +73,14 @@
 
 .reviews__text {
     color: #666666;
-    font-size: 18px;
-    max-width: 435px;
-    margin-bottom: 30px;
+    font-size: rem(1rem(8px));
+    max-width: rem(435px);
+    margin-bottom: rem(30px);
 }
 
 .reviews__username {
     color: #666666;
-    font-size: 18px;
+    font-size: rem(1rem(8px));
     font-weight: 500;
 }
 
@@ -90,10 +90,10 @@
 }
 
 .reviews__item {
-    width: 94px;
-    height: 94px;
+    width: rem(94px);
+    height: rem(94px);
     border-radius: 50%;
-    margin-right: 40px;
+    margin-right: rem(40px);
 
 
     &:last-child {
@@ -101,11 +101,11 @@
     }
 
     &:hover {
-        border: 8px solid #0f5a47;
+        border: rem(8px) solid #0f5a47;
         transition: .2s;
     }
 }
 
 .reviews__item_active {
-    border: 8px solid #0f5a47;
+    border: rem(8px) solid #0f5a47;
 }

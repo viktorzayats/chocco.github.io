@@ -7,27 +7,27 @@
 }
 
 .greating__container {
-    padding: 25px 0 50px 0;
+    padding: rem(25px) 0 rem(50px) 0;
     justify-content: space-between;
     position: relative;
 
     &::before {
         content: "";
-        width: 465px;
-        height: 345px;
+        width: rem(465px);
+        height: rem(345px);
         background: url(/images/leaves.png) no-repeat;
         position: absolute;
-        bottom: -40px;
-        right: -50px;
+        bottom: rem(-40px);
+        right: rem(-50px);
     }
 
     &::after {
         content: "";
-        width: 60px;
-        height: 100px;
+        width: rem(60px);
+        height: rem(100px);
         background: url(/images/leave.png) no-repeat;
         position: absolute;
-        bottom: -40px;
-        left: -50px;
+        bottom: rem(-40px);
+        left: rem(-50px);
     }
 }

@@ -1,6 +1,6 @@
 .address {
     font-style: normal;
-    font-size: 24px;
+    font-size: rem(24px);
 }
 
 .address_header {
@@ -9,9 +9,9 @@
 }
 
 .address__phone {
-    width: 11px;
-    height: 11px;
-    margin-right: 6px;
+    width: rem(11px);
+    height: rem(11px);
+    margin-right: rem(6px);
     fill: #ffffff;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .adress_footer {
-    font-size: 21px;
+    font-size: rem(21px);
 }
 
 .addres__link_footer {

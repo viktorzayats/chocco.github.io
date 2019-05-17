@@ -3,7 +3,7 @@
 }
 
 .nav__item {
-    margin-right: 30px;
+    margin-right: rem(30px);
 }
 .nav__item:last-child {
     margin: 0;
@@ -11,5 +11,5 @@
 
 .nav__link {
     color: #ffffff;
-    font-size: 18px;
+    font-size: rem(18px);
 }

@@ -7,29 +7,29 @@
 .description__item {
     display: flex;
     align-items: center;
-    margin-right: 47px;
+    margin-right: rem(47px);
     &:last-child {
         margin: 0;
     }
 }
 
 .description__pic {
-    margin-right: 10px;
+    margin-right: rem(10px);
 }
 
 .description__pic_leave {
-    min-width: 44px;
-    min-height: 41px;
+    min-width: rem(44px);
+    min-height: rem(41px);
 }
 
 .description__pic_car {
-    min-width: 50px;
-    min-height: 40px;   
+    min-width: rem(50px);
+    min-height: rem(40px);   
 }
 
 .description__pic_ruler {
-    min-width: 42px;
-    min-height: 42px;    
+    min-width: rem(42px);
+    min-height: rem(42px);    
 }
 
 .description__img {
@@ -37,8 +37,8 @@
 }
 
 .description__text {
-    font-size: 16px;
-    max-width: 84px;
+    font-size: rem(16px);
+    max-width: rem(84px);
 
 }
 
@@ -49,17 +49,17 @@
 }
 
 .description__svg_leave {
-    width: 44px;
-    height: 41px;
+    width: rem(44px);
+    height: rem(41px);
 }
 
 .description__svg_car {
     fill: #61c4d9;
-    width: 50px;
-    height: 40px;
+    width: rem(50px);
+    height: rem(40px);
 }
 
 .description__svg_ruler {
-    width: 42px;
-    height: 42px;
+    width: rem(42px);
+    height: rem(42px);
 }

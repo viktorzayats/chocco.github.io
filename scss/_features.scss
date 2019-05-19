@@ -4,7 +4,7 @@
 
     @include tablets {
         height: 100%;
-        padding: 10% 0;
+        padding: 20% 0;
     }
 
 
@@ -23,6 +23,12 @@
             background-size: contain;
         }
         }
+    
+}
+
+.features__container {
+    z-index: 1;
+    position: relative;
     
 }
 

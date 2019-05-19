@@ -12,9 +12,11 @@
     }
 
     @include phones {
-        background: url('/images/candy.png') 50% 5%/100%,
-        url('/images/pattern.png') right top/67% #61c4d9;
+        background: url('/images/candy.png') 50% 5%/85%,
+        url('/images/pattern.png') right top/80% #61c4d9;
         background-repeat: no-repeat;
+
+        height: 100%;
     }
 }
 
@@ -57,5 +59,11 @@
         @include tablets {
             display: none;
         }
+    }
+}
+
+.greeting__fake {
+    @include phones {
+        height: rem(420px);
     }
 }

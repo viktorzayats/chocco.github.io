@@ -30,6 +30,8 @@
 
     @include phones {
         padding: 20% 0;
+        position: relative;
+        z-index: 2;
     }
 }
 
@@ -127,10 +129,10 @@
 }
 
 .reviews__item {
-    width: rem(94px);
-    height: rem(94px);
+    max-width: rem(94px);
+    max-height: rem(94px);
     border-radius: 50%;
-    margin-right: rem(40px);
+    margin-right: 5%;
 
 
     &:last-child {

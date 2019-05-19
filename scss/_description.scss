@@ -11,14 +11,18 @@
 .description__item {
     display: flex;
     align-items: center;
-    margin-right: rem(45px);
+    margin-right: 5%;
     &:last-child {
         margin: 0;
+    }
+
+    @include phones {
+        margin-right: 3%;
     }
 }
 
 .description__pic {
-    margin-right: rem(10px);
+    margin-right: 5%;
 }
 
 .description__pic_leave {
@@ -42,7 +46,7 @@
 
 .description__text {
     font-size: rem(16px);
-    max-width: rem(84px);
+    max-width: rem(85px);
 
 }
 

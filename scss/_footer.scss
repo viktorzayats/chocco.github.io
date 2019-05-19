@@ -20,6 +20,12 @@
     flex: 1;
 }
 
+.footer__left {
+    @include phones {
+        margin-bottom: rem(10px);
+    }
+}
+
 .footer__right {
     display: flex;
     align-items: center;

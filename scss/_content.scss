@@ -1,8 +1,18 @@
 .content {
     display: flex;
+
+    @include tablets {
+        margin-top: auto;
+        margin-bottom: 5%;
+    }
 }
 .content__promo {
     flex: .5;
+
+    @include tablets {
+        flex: 1;
+        text-align: center;
+    }
 }
 
 .content__text {

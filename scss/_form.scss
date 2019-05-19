@@ -2,6 +2,10 @@
     display: flex;
     font-size: rem(18px);
     color: #0f5a47;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .form__left, .form__right {
@@ -10,6 +14,10 @@
 
 .form__right {
     margin-left: rem(20px);
+
+    @include tablets {
+        margin-left: 0;
+    }
 }
 
 .form__row {
@@ -19,8 +27,20 @@
 }
 
 .form__row_radio {
-    margin-bottom: rem(40px);
+    margin-bottom: 0;
 }
+
+.form__row_checkbox {
+    margin-bottom: rem(30px);
+}
+
+.form__row_radio, .form__row_checkbox,
+.form__row_button {
+    @include tablets {
+        justify-content: center;
+    }
+}
+
 
 .form__label {
     flex: 1;
@@ -108,6 +128,7 @@
     display: flex;
     position: relative;
     margin-left: 0;
+    flex: 0;
 }
 
 .form__checkbox-fake {

@@ -4,12 +4,32 @@
 
     &:after {
         content: "";
-        height: 422px;
-        width: 160px;
+        height: rem(422px);
+        width: rem(160px);
         background: url('/images/2-layers.png') no-repeat;
         position: absolute;
         bottom: -25%;
         z-index: 1;
+
+        @include tablets {
+            background: url('/images/2-layers-tablets.png') no-repeat;
+        }
+    }
+
+    @include tablets {
+        height: 100%;
+        background: url('/images/strawberry-tablets.png') right 2% no-repeat;
+        
+    }
+}
+
+.reviews__container {
+    @include tablets {
+        padding: 5% 10%;
+    }
+
+    @include phones {
+        padding: 20% 0;
     }
 }
 
@@ -18,7 +38,7 @@
     font-size: 4rem(8px);
     color: #0d0d0d;
     text-align: center;
-    margin-bottom: 55px;
+    margin-bottom: rem(55px);
 }
 
 .reviews__content {
@@ -26,20 +46,26 @@
     background-image: url('/images/bush.png');
     background-position: right top;
     background-repeat: no-repeat;
-    padding: 50px 0 40px 45px;
+    padding: rem(50px) rem(45px) rem(40px) rem(45px);
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
     position: relative;
     overflow: hidden;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        background-image: url('/images/bush-tablets.png');
+    }
 
 
     &::before {
         content: "";
-        width: 100px;
-        height: 100px;
+        width: rem(100px);
+        height: rem(100px);
         border-radius: 50%;
         position: absolute;
-        top: -75px;
+        top: rem(-75px);
         right: 50%;
         transform: translateX(50%);
         background-color: #fff;
@@ -47,10 +73,16 @@
 }
 
 .reviews__avatar {
-    width: 255px;
-    height: 260px;
+    width: rem(255px);
+    height: rem(260px);
     overflow: hidden;
-    margin-right: 20px;
+    margin-right: rem(20px);
+
+    @include tablets {
+        margin-right: 0;
+        width: rem(204px);
+        height: rem(209px);
+    }
 }
 
 .reviews__photo {
@@ -61,19 +93,24 @@
 
 .reviews__desc {
     margin-right: auto;
+
+    @include tablets {
+        margin-right: 0;
+        text-align: center;
+    }
 }
 
 .reviews__subtitle {
     color: #323232;
-    font-size: 30px;
+    font-size: rem(30px);
     font-weight: 500;
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
 
 }
 
 .reviews__text {
     color: #666666;
-    font-size: rem(1rem(8px));
+    font-size: rem(18px);
     max-width: rem(435px);
     margin-bottom: rem(30px);
 }

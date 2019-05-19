@@ -2,6 +2,10 @@
     position: fixed;
     top: rem(220px);
     right: rem(50px);
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .pagination__item {

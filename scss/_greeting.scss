@@ -1,9 +1,21 @@
 .greeting {
     background: url('/images/candy.png') 85% 50%,
-    url('/images/pattern.png') right bottom,#61c4d9;
+    url('/images/pattern.png') right bottom/cover,#61c4d9;
     background-repeat: no-repeat;
     background-size: 40%;
     color: #ffffff;
+
+    @include tablets {
+        background: url('/images/candy.png') 50% 5%/50%,
+        url('/images/pattern.png') right top/67% #61c4d9;
+        background-repeat: no-repeat;
+    }
+
+    @include phones {
+        background: url('/images/candy.png') 50% 5%/100%,
+        url('/images/pattern.png') right top/67% #61c4d9;
+        background-repeat: no-repeat;
+    }
 }
 
 .greating__container {
@@ -13,12 +25,24 @@
 
     &::before {
         content: "";
-        width: rem(465px);
-        height: rem(345px);
+        width: rem(457px);
+        height: rem(340px);
         background: url(/images/leaves.png) no-repeat;
         position: absolute;
         bottom: rem(-40px);
         right: rem(-50px);
+
+        @include tablets {
+            width: rem(434px);
+            height: rem(280px);
+            background: url(/images/3-layers-768.png) no-repeat;
+            top: 20%;
+            right: 20%;
+        }
+
+        @include phones {
+            right: 0;
+        }
     }
 
     &::after {
@@ -29,5 +53,9 @@
         position: absolute;
         bottom: rem(-40px);
         left: rem(-50px);
+
+        @include tablets {
+            display: none;
+        }
     }
 }

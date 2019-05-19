@@ -1,24 +1,47 @@
-.accordeon-team {
-    height: auto;
-}
-
 .accordeon-team__list {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+
+    @include tablets {
+        padding: 0 18%;
+    }
+
+    @include phones {
+        padding: 0;
+    }
 }
 
 .accordeon-team__item {
-    max-width: rem(223px);
+    flex: 1;
     text-align: center;
+    margin-right: rem(15px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
 
     &:nth-child(even) {
         margin-top: rem(50px);
+
+        @include tablets {
+            margin-top: 0;
+            margin-right: 0;
+        }
+    }
+
+    &:nth-child(-n+2) {
+        @include tablets {
+            margin-bottom: rem(35px);
+        }
+    }
+
+    @include tablets {
+        flex-basis: 32%;
     }
 }
 
 .accordeon-team__avatar {
-    width: rem(223px);
     height: rem(289px);
     overflow: hidden;
     margin-bottom: rem(25px);

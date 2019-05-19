@@ -6,6 +6,10 @@
 .address_header {
     display: flex;
     align-items: center;
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .address__phone {
@@ -36,6 +40,10 @@
 .address__contakt-phone {
     display: flex;
     align-items: center;
+
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .address__contakt-phone .address__phone {

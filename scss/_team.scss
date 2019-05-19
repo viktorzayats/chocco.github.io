@@ -8,6 +8,14 @@
         position: absolute;
         right: 0;
         top: -30%;
+
+        @include phones {
+            width:  rem(170px);
+            height: rem(462px);
+            background-size: contain;
+            right: -9%;
+            top: -19%;
+        }
     }
 
     &:after {
@@ -18,5 +26,24 @@
         position: absolute;
         bottom: -5%;
         z-index: 1;
+
+        @include phones {
+            width: rem(83px);
+            height: rem(90px);
+            background-size: contain;
+            bottom: -3%;
+            left: 4%;
+        }
+    }
+
+    @include tablets {
+        height: 100%;
+    }
+}
+
+.team__container {
+    @include tablets {
+        padding: 10% 0;
+        position: relative;
     }
 }

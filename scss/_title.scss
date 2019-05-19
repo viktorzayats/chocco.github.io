@@ -3,11 +3,19 @@
     text-transform: uppercase;
     line-height: rem(60px);
     font-size: rem(48px);
+
+    @include phones {
+        font-size: rem(40px);
+    }
 }
 
 .title_wihte {
     margin-bottom: rem(15px);
     font-size: rem(60px);
+
+    @include phones {
+        font-size: rem(48px);
+    }
 }
 
 .title_black, .title_team {

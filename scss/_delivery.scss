@@ -10,11 +10,31 @@
         position: absolute;
         right: rem(-45px);
         top: rem(-135px);
+
+        @include tablets {
+            width: rem(136px);
+            height: rem(148px);
+            background-size: contain;
+            top: rem(-82px);
+            right: rem(-35px);
+        }
+    }
+
+    @include tablets {
+        height: 100%;
     }
 }
 
 .delivery__container {
     position: relative;
+
+    @include tablets {
+        padding: 10% 10%;
+    }
+
+    @include phones {
+        padding: 10% 0;
+    }
 
     &::before {
         content: "";
@@ -24,6 +44,10 @@
         position: absolute;
         left: rem(50px);
         bottom: rem(55px);
+
+        @include tablets {
+            display: none;
+        }
     }
 
     &::after {
@@ -34,5 +58,9 @@
         position: absolute;
         right: rem(-65px);
         bottom: rem(105px);
+
+        @include tablets {
+            display: none;
+        }
     }
 }

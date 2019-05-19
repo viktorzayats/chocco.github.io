@@ -2,12 +2,16 @@
 
 .description__list {
     display: flex;
+
+    @include tablets {
+        justify-content: center;
+    }
 }
 
 .description__item {
     display: flex;
     align-items: center;
-    margin-right: rem(47px);
+    margin-right: rem(45px);
     &:last-child {
         margin: 0;
     }

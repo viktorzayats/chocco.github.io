@@ -82,7 +82,9 @@
 }
 
 .accordeon-menu__item_active .accordeon-menu__drop-close {
-    display: block;
+    @include phones {
+        display: block;
+    }
 }
 
 .accordeon-menu__drop p {

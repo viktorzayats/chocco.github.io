@@ -1329,8 +1329,9 @@ img {
   top: 1.25rem;
   display: none; }
 
-.accordeon-menu__item_active .accordeon-menu__drop-close {
-  display: block; }
+@media (max-width: 480px) {
+  .accordeon-menu__item_active .accordeon-menu__drop-close {
+    display: block; } }
 
 .accordeon-menu__drop p {
   padding: 3.4375rem 1.25rem;

@@ -12,11 +12,19 @@
 
 }
 
+.accordeon-menu__list {
+    position: relative;
+}
+
 .accordeon-menu__link {
     width: rem(100px);
     align-items: flex-end;
     color: #fff;
     padding-bottom: rem(40px);
+
+    @include phones {
+        width: rem(80px);
+    }
 }
 
 .accordeon-menu__link_first {
@@ -40,9 +48,21 @@
     background-position: rem(-270px);
 }
 
+.accordeon-menu__item_active {
+    @include phones {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+    }
+}
+
 .accordeon-menu__item_active .accordeon-menu__drop {
     width: rem(430px);
     transition: 0.8s;
+
+    @include phones {
+        width: 100%;
+    }
 }
 
 .accordeon-menu__drop {
@@ -51,9 +71,27 @@
     background: rgba(0,0,0,0.75);
 }
 
+.accordeon-menu__drop-close {
+    width: rem(18px);
+    height: rem(18px);
+    background: url('/images/Закрыть.png') no-repeat;
+    position: absolute;
+    right: rem(10px);
+    top: rem(20px);
+    display: none;
+}
+
+.accordeon-menu__item_active .accordeon-menu__drop-close {
+    display: block;
+}
+
 .accordeon-menu__drop p {
-    padding: rem(55px) rem(25px);
-    min-width: 430px;
+    padding: rem(55px) rem(20px);
+    min-width: rem(430px);
+
+    @include phones {
+        min-width: rem(400px);
+    }
 }
 
 .accordeon-menu__link span {

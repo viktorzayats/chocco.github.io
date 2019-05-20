@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1118,7 +1119,7 @@ img {
   background: url("/images/1raspberries.png") no-repeat;
   position: absolute;
   bottom: -5%;
-  z-index: 1; }
+  z-index: 2; }
   @media (max-width: 480px) {
     .team:after {
       width: 5.1875rem;
@@ -1261,6 +1262,9 @@ img {
   display: flex;
   height: 100%; }
 
+.accordeon-menu__list {
+  position: relative; }
+
 .accordeon-menu__link {
   width: 6.25rem;
   -webkit-box-align: end;
@@ -1268,6 +1272,9 @@ img {
   align-items: flex-end;
   color: #fff;
   padding-bottom: 2.5rem; }
+  @media (max-width: 480px) {
+    .accordeon-menu__link {
+      width: 5rem; } }
 
 .accordeon-menu__link_first {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url("/images/kokos.png") no-repeat;
@@ -1293,20 +1300,44 @@ img {
   background-size: cover;
   background-position: -16.875rem; }
 
+@media (max-width: 480px) {
+  .accordeon-menu__item_active {
+    position: absolute;
+    right: 0;
+    z-index: 1; } }
+
 .accordeon-menu__item_active .accordeon-menu__drop {
   width: 26.875rem;
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;
   transition: 0.8s; }
+  @media (max-width: 480px) {
+    .accordeon-menu__item_active .accordeon-menu__drop {
+      width: 100%; } }
 
 .accordeon-menu__drop {
   width: 0;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.75); }
 
+.accordeon-menu__drop-close {
+  width: 1.125rem;
+  height: 1.125rem;
+  background: url("/images/Закрыть.png") no-repeat;
+  position: absolute;
+  right: 0.625rem;
+  top: 1.25rem;
+  display: none; }
+
+.accordeon-menu__item_active .accordeon-menu__drop-close {
+  display: block; }
+
 .accordeon-menu__drop p {
-  padding: 3.4375rem 1.5625rem;
-  min-width: 430px; }
+  padding: 3.4375rem 1.25rem;
+  min-width: 26.875rem; }
+  @media (max-width: 480px) {
+    .accordeon-menu__drop p {
+      min-width: 25rem; } }
 
 .accordeon-menu__link span {
   -webkit-transform: rotate(-90deg);
@@ -1349,7 +1380,8 @@ img {
       height: 100%; } }
 
 .delivery__container {
-  position: relative; }
+  position: relative;
+  z-index: 2; }
   @media (max-width: 768px) {
     .delivery__container {
       padding: 10% 10%; } }
@@ -1608,7 +1640,7 @@ img {
   align-items: center;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: end; }
+  justify-content: flex-end; }
   @media (max-width: 480px) {
     .footer__right {
       -webkit-box-pack: center;

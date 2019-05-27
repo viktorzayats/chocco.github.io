@@ -1,32 +1,20 @@
-.gamburger {
+.gamburger{
     display: none;
-    width: rem(24px);
-    height: rem(4px);
-    background-color: #fff;
-    position: relative;
-    border-radius: rem(5px);
-
-    &::before {
-        content: "";
-        width: rem(24px);
-        height: rem(4px);
-        background-color: #fff;
-        position: absolute;
-        top: rem(-9px);
-        border-radius: rem(5px);
-    }
-
-    &:after {
-        content: "";
-        width: rem(24px);
-        height: rem(4px);
-        background-color: #fff;
-        position: absolute;
-        bottom: rem(-9px);
-        border-radius: rem(5px);
-    }
 
     @include tablets {
         display: block;
+    }
+}
+
+.gamburger__span {
+    width: rem(24px);
+    height: rem(4px);
+    background-color: #fff;
+    border-radius: rem(5px);
+    display: block;
+    margin-bottom: rem(5px);
+
+    &:last-child {
+        margin-bottom: 0;
     }
 }

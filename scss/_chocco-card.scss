@@ -1,0 +1,81 @@
+.chocco-card {
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+    }
+}
+
+.chocco-card__right, .chocco-card__left {
+    flex: 1;
+}
+
+.chocco-card__left {
+    margin-right: rem(70px);
+
+    @include tablets {
+        margin-right: 0;
+        margin-bottom: rem(35px);
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.chocco-card__right {
+    @include tablets {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.chocco-card__consist {
+    margin-bottom: rem(35px);
+}
+
+.chocco-card__subtitle {
+    font-size: rem(24px);
+    font-weight: 500;
+    color: #323232;
+    margin-bottom: rem(25px);
+}
+
+.chocco-card__desc {
+    color: #666666;
+    font-size: rem(18px);
+}
+
+.chocco-card__desc p {
+    max-width: rem(340px);
+
+    @include tablets {
+        max-width: initial;
+    }
+}
+
+.chocco-card__compaund {
+    display: flex;
+    margin-bottom: rem(30px);
+    justify-content: center;
+}
+
+.chocco-card__order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chocco-card__kkal, .chocco-card__weight {
+    font-size: rem(18px);
+    color: #333333;
+}
+
+.chocco-card__kkal {
+    margin-right: rem(55px);
+}
+
+.chocco-card__price {
+    font-size: 60px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-right: rem(30px);
+}

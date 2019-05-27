@@ -1,0 +1,45 @@
+.slide {
+    display: flex;
+    align-items: center;
+
+    @include tablets {
+        padding: rem(70px) rem(150px);
+        align-items: flex-start;
+    }
+
+    @include phones {
+        padding: rem(70px) 0;
+    }
+}
+
+.slide__arrow-left, .slide__arrow-right {
+    display: flex;
+    min-width: rem(13px);
+    height: rem(28px);
+    background: url('/images/arrow-scroll.png') no-repeat;
+
+    @include tablets {
+        position: relative;
+        top: rem(175px);
+    }
+}
+
+.slide__arrow-right {
+    transform: rotate(180deg);
+
+    @include tablets {
+        right: rem(-35px);
+    }
+}
+
+.slide__arrow-left {
+    @include tablets {
+        right: rem(35px);
+    }
+}
+
+.slide__arrow-left, .slide__arrow-right {
+    @include phones {
+        right: 0;
+    }
+}

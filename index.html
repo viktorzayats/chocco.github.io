@@ -37,6 +37,7 @@
                                 <a href="" class="nav__link">Контакты</a>
                             </li>
                         </ul>
+                        <a href="#" class="nav__close"></a>
                     </nav>
                     <address class="address address_header">
                         <svg class="address__phone">
@@ -44,7 +45,11 @@
                         </svg>
                         <a href="8 800 903 90 90" class="address__link">8 800 903 90 90</a> 
                     </address>
-                    <a href="#" class="gamburger"></a>
+                    <a href="#" class="gamburger">
+                        <span class="gamburger__span"></span>
+                        <span class="gamburger__span"></span>
+                        <span class="gamburger__span"></span>
+                    </a>
                 </header>
                 <div class="greeting__fake"></div>
                 <main class="content">
@@ -58,7 +63,7 @@
                             Наши батончики идеально подходят для <br> 
                             тех, кто следит за своим здоровьем
                         </div>
-                        <a href="" class="btn btn_greeting">Заказать</a>
+                        <a href="#" class="btn btn_greeting">Заказать</a>
                     </div>
                 </main>
                 <div class="description">
@@ -153,7 +158,48 @@
                 </ul>
             </div>
         </section>
-
+<!-------------------------------------------------------SLIDER---------------------------------------------------------------------------------->
+        <section class="section slider">
+            <div class="container slider__container">
+                <main class="slide">
+                    <a href="" class="slide__arrow-left"></a>
+                    <div class="slide__wrap">
+                        <ul class="slide__list">
+                            <li class="slide__item">
+                                <div class="chocco-card">
+                                    <div class="chocco-card__left">
+                                        <img src="/images/slider-pic.png" alt="slide" class="chocco-card__img">
+                                    </div>
+                                    <div class="chocco-card__right">
+                                        <h2 class="title title_slider">Батончик “Морские  водоросли”</h2>
+                                        <div class="chocco-card__consist">
+                                            <h4 class="chocco-card__subtitle">Состав:</h4>
+                                            <div class="chocco-card__desc">
+                                                <p>
+                                                    Гранола из морских водорослей с овсом, 
+                                                    миндалем и тыквенными семечками. 
+                                                    В состав также входят: сухое молоко, 
+                                                    заменитель сахара и какао бобы.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="chocco-card__compaund">
+                                            <span class="chocco-card__kkal">Калорийность <br> <strong>120 ккал</strong></span>
+                                            <span class="chocco-card__weight">Вес <br> <strong>98 грамм</strong></span>
+                                        </div>
+                                        <div class="chocco-card__order">
+                                            <span class="chocco-card__price">140 ₽</span>
+                                            <a href="#" class="btn btn_slider">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="slide__arrow-right"></a>
+                </main>
+            </div>
+        </section>
 <!------------------------------------------------------TEAM----------------------------------------------------------------------------------------->
 
         <section class="section team">
@@ -222,12 +268,12 @@
             <h2 class="title title_menu">меню</h2>
             <div class="accordeon-menu">
                 <ul class="accordeon-menu__list">
-                    <li class="accordeon-menu__item accordeon-menu__item_active">
+                    <li class="accordeon-menu__item">
                         <a href="" class="accordeon-menu__link accordeon-menu__link_first">
                             <span>Батончики с молоком</span> 
                         </a>
                         <div class="accordeon-menu__drop">
-                            <a href="#" class="accordeon-menu__drop-close"></a>
+                            <a href="#" class="accordeon-menu__close"></a>
                             <p>
                             Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
                             Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно 
@@ -241,6 +287,7 @@
                             <span>С мёдом и фруктами</span> 
                         </a>
                         <div class="accordeon-menu__drop">
+                            <a href="#" class="accordeon-menu__close"></a>
                             <p>
                             Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
                             Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно 
@@ -254,6 +301,7 @@
                             <span>Дикие ягоды</span>
                         </a>
                         <div class="accordeon-menu__drop">
+                            <a href="#" class="accordeon-menu__close"></a>
                             <p>
                             Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
                             Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно 
@@ -458,5 +506,8 @@
             </li>
         </ul>
     </div>
+    <script src="/javaScript/nav.js"></script>
+    <script src="/javaScript/menu.js"></script>
+    <script src="/javaScript/team.js"></script>
 </body>
 </html>

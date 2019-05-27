@@ -1,0 +1,11 @@
+.slider {
+    background-color: #f8faf9;
+    height: 100%;
+}
+
+.slider__container {
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}

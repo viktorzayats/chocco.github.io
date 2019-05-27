@@ -74,9 +74,11 @@
     width: 0;
     overflow: hidden;
     background: rgba(0,0,0,0.75);
+    position: relative;
+    transition: 0.8s;
 }
 
-.accordeon-menu__drop-close {
+.accordeon-menu__close {
     width: rem(18px);
     height: rem(18px);
     background: url('/images/Закрыть.png') no-repeat;
@@ -86,7 +88,7 @@
     display: none;
 }
 
-.accordeon-menu__item_active .accordeon-menu__drop-close {
+.accordeon-menu__item_active .accordeon-menu__close {
     @include phones {
         display: block;
     }

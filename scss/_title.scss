@@ -43,3 +43,13 @@
     color: #0f5a47;
     text-align: center;
 }
+
+.title_slider {
+    font-size: rem(36px);
+    line-height: 1.2;
+    margin-bottom: rem(35px);
+
+    @include tablets {
+        font-size: rem(30px);
+    }
+}

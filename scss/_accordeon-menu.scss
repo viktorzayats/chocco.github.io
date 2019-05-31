@@ -54,19 +54,11 @@
 }
 
 .accordeon-menu__item_active {
+
     @include phones {
         position: absolute;
         right: 0;
         z-index: 1;
-    }
-}
-
-.accordeon-menu__item_active .accordeon-menu__drop {
-    width: rem(430px);
-    transition: 0.8s;
-
-    @include tablets {
-        width: 100%;
     }
 }
 
@@ -76,6 +68,20 @@
     background: rgba(0,0,0,0.75);
     position: relative;
     transition: 0.8s;
+
+    @include phones {
+        transition: 0s;
+    }
+}
+
+.accordeon-menu__item_active .accordeon-menu__drop {
+    width: rem(430px);
+    transition: 0.8s;
+
+    @include phones {
+        width: 100%;
+        transition: 0s;
+    }
 }
 
 .accordeon-menu__close {
@@ -99,6 +105,10 @@
     min-width: rem(430px);
 
     @include tablets {
+        
+    }
+
+    @include phones {
         min-width: 100%;
     }
 }

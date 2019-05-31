@@ -1379,15 +1379,6 @@ img {
     right: 0;
     z-index: 1; } }
 
-.accordeon-menu__item_active .accordeon-menu__drop {
-  width: 26.875rem;
-  -webkit-transition: 0.8s;
-  -o-transition: 0.8s;
-  transition: 0.8s; }
-  @media (max-width: 768px) {
-    .accordeon-menu__item_active .accordeon-menu__drop {
-      width: 100%; } }
-
 .accordeon-menu__drop {
   width: 0;
   overflow: hidden;
@@ -1396,6 +1387,23 @@ img {
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;
   transition: 0.8s; }
+  @media (max-width: 480px) {
+    .accordeon-menu__drop {
+      -webkit-transition: 0s;
+      -o-transition: 0s;
+      transition: 0s; } }
+
+.accordeon-menu__item_active .accordeon-menu__drop {
+  width: 26.875rem;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s; }
+  @media (max-width: 480px) {
+    .accordeon-menu__item_active .accordeon-menu__drop {
+      width: 100%;
+      -webkit-transition: 0s;
+      -o-transition: 0s;
+      transition: 0s; } }
 
 .accordeon-menu__close {
   width: 1.125rem;
@@ -1413,7 +1421,7 @@ img {
 .accordeon-menu__drop p {
   padding: 3.4375rem 1.25rem;
   min-width: 26.875rem; }
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     .accordeon-menu__drop p {
       min-width: 100%; } }
 
@@ -1790,8 +1798,10 @@ img {
     margin-bottom: 0; }
 
 .slider {
-  background-color: #f8faf9;
-  height: 100%; }
+  background-color: #f8faf9; }
+  @media (max-width: 480px) {
+    .slider {
+      height: 100%; } }
 
 .slider__container {
   -webkit-box-orient: horizontal;
@@ -1810,7 +1820,8 @@ img {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
   @media (max-width: 768px) {
     .slide {
       padding: 4.375rem 9.375rem;
@@ -1827,27 +1838,53 @@ img {
   display: flex;
   min-width: 0.8125rem;
   height: 1.75rem;
-  background: url("/images/arrow-scroll.png") no-repeat; }
+  background: url("/images/arrow-scroll.png") no-repeat;
+  position: absolute; }
   @media (max-width: 768px) {
     .slide__arrow-left, .slide__arrow-right {
-      position: relative;
-      top: 10.9375rem; } }
+      top: 17.1875rem; } }
 
 .slide__arrow-right {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
-  transform: rotate(180deg); }
+  transform: rotate(180deg);
+  right: -1.25rem; }
   @media (max-width: 768px) {
     .slide__arrow-right {
-      right: -2.1875rem; } }
+      right: 2.1875rem; } }
+  @media (max-width: 480px) {
+    .slide__arrow-right {
+      right: 0; } }
 
-@media (max-width: 768px) {
-  .slide__arrow-left {
-    right: 2.1875rem; } }
+.slide__arrow-left {
+  left: -1.25rem; }
+  @media (max-width: 768px) {
+    .slide__arrow-left {
+      left: 2.1875rem; } }
+  @media (max-width: 480px) {
+    .slide__arrow-left {
+      left: 0; } }
 
-@media (max-width: 480px) {
-  .slide__arrow-left, .slide__arrow-right {
-    right: 0; } }
+.slide__wrap {
+  width: 100%;
+  overflow: hidden; }
+
+.slide__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+
+.slide__item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
 
 .chocco-card {
   display: -webkit-box;
@@ -1908,10 +1945,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 1.875rem;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  margin-bottom: 1.875rem; }
+  @media (max-width: 768px) {
+    .chocco-card__compaund {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .chocco-card__order {
   display: -webkit-box;
@@ -1919,10 +1958,12 @@ img {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  align-items: center; }
+  @media (max-width: 768px) {
+    .chocco-card__order {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .chocco-card__kkal, .chocco-card__weight {
   font-size: 1.125rem;

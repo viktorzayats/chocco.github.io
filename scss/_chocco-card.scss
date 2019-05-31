@@ -55,13 +55,19 @@
 .chocco-card__compaund {
     display: flex;
     margin-bottom: rem(30px);
-    justify-content: center;
+
+    @include tablets {
+        justify-content: center;
+    }
 }
 
 .chocco-card__order {
     display: flex;
     align-items: center;
-    justify-content: center;
+    
+    @include tablets {
+        justify-content: center;
+    }
 }
 
 .chocco-card__kkal, .chocco-card__weight {

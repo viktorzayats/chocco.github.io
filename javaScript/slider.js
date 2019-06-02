@@ -13,5 +13,20 @@ right.addEventListener('click', function (e) {
    if (pars < comput) {
        pars += slideWidth;
        slide.style.transform = `translateX(${-pars}px)`;
+   }else {
+        pars = 0;
+        slide.style.transform = `translateX(${0}px)`;
    };
 });
+
+left.addEventListener('click', function (e) {
+    e.preventDefault();
+ 
+    if (pars > 0) {
+        pars -= slideWidth;
+        slide.style.transform = `translateX(${-pars}px)`;
+    } else {
+        pars = comput;
+        slide.style.transform = `translateX(${-pars}px)`;
+    };
+ });

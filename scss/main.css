@@ -1774,7 +1774,8 @@ img {
   fill-opacity: .3;
   -webkit-transition: .4s;
   -o-transition: .4s;
-  transition: .4s; }
+  transition: .4s;
+  height: 100%; }
   .social__icon:hover {
     fill-opacity: 1;
     -webkit-transition: .4s;

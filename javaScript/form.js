@@ -5,17 +5,18 @@ const myForm = document.querySelector('.form');
 myForm.addEventListener('submit', function (e) {
    e.preventDefault();
 
-   const formData = new FormData(myForm);
-   formData.append('to', 'zaychik@mail.ru');
+   var formData = new FormData(myForm);
    var url = 'https://webdev-api.loftschool.com/sendmail';
+
+   formData.append('to', 'zaychik@mail.ru');
    fetch(url, {method: 'POST', body: formData})
-      .then(function(response){
-         console.log(response);
-      }) ;
-   
-   
-    
-   
+      .then(function (response){
+         return response.json();
+      })
+
+      .then(function (formData){
+         console.log(formData);
+      })
 });
 
 

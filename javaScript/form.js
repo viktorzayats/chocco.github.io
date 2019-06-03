@@ -1,7 +1,5 @@
 const myForm = document.querySelector('.form');
 
-
-
 myForm.addEventListener('submit', function (e) {
    e.preventDefault();
 
@@ -38,6 +36,7 @@ myForm.addEventListener('submit', function (e) {
 //   if (validateForm(myForm)) {
 
 //         const formData = new FormData(myForm);
+
 //         // const formData = {
 //         //     name: myForm.elements.name.value,
 //         //     phone: myForm.elements.phone.value,

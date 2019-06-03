@@ -1,32 +1,41 @@
-const left = document.querySelector('.slide__arrow-left');
-const right = document.querySelector('.slide__arrow-right');
-const slide = document.querySelector('.slide__list');
-const slidStyle = getComputedStyle(slide);
-var slideWidth = slide.clientWidth;
-var pars = 0;
-var comput = slide.children.length * slideWidth - slideWidth;
+const slide = document.querySelector('.slide');
+const list = slide.querySelector('.slide__list');
+const slideLenght = list.children.length;
+let current = 0;
 
+slide.addEventListener('click', function(event) {
+    event.preventDefault();
+    const target = event.target;
+    
+    if (target.classList.contains('slide__arrow-left')) {
+        slidLeft();
+    };
 
-right.addEventListener('click', function (e) {
-   e.preventDefault();
-
-   if (pars < comput) {
-       pars += slideWidth;
-       slide.style.transform = `translateX(${-pars}px)`;
-   }else {
-        pars = 0;
-        slide.style.transform = `translateX(${0}px)`;
-   };
+    if (target.classList.contains('slide__arrow-right')) {
+        slideRight();
+    };
 });
 
-left.addEventListener('click', function (e) {
-    e.preventDefault();
- 
-    if (pars > 0) {
-        pars -= slideWidth;
-        slide.style.transform = `translateX(${-pars}px)`;
+function slidLeft () {      
+    if (current > 0) {
+        current--;
+        translateX(current);
     } else {
-        pars = comput;
-        slide.style.transform = `translateX(${-pars}px)`;
+        current = slideLenght - 1;
+        translateX(current);
     };
- });
+};
+
+function slideRight() {
+    if (current < slideLenght - 1) {        
+        current++;
+        translateX(current);
+    } else {
+        current = 0;
+        translateX(current);
+    };
+};
+
+ function translateX (indexSlide) {
+    list.style.transform = `translateX(${-indexSlide * 100}%)`;
+};

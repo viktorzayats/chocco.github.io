@@ -8,8 +8,10 @@ myForm.addEventListener('submit', function (e) {
    const formData = new FormData(myForm);
    formData.append('to', 'zaychik@mail.ru');
    var url = 'https://webdev-api.loftschool.com/sendmail';
-   fetch(url, {method: 'POST', body: formData});
-   
+   fetch(url, {method: 'POST', body: formData})
+      .then(function(response){
+         console.log(response);
+      }) ;
    
    
     

@@ -21,6 +21,7 @@ myForm.addEventListener('submit', function (e) {
             var send = modal.querySelector('.modal__send');
             send.textContent = formData.message;
             inner.classList.add('inner_show');
+            myForm.reset();
          }
       })
 });

@@ -419,26 +419,22 @@
                                 <label class="form__label">
                                     <span class="form__text">Имя</span>
                                     <input type="text" class="form__input" name="name" required>
-                                    <div class="eror"></div>
                                 </label>
                                 <label class="form__label">
                                     <span class="form__text">Телефон</span>
                                     <input type="tel" class="form__input" name="phone" required>
-                                    <div class="eror"></div>
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__label">
                                     <span class="form__text">Улица</span>
                                     <input type="text" class="form__input" name="street" required>
-                                    <div class="eror"></div>
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__label">
                                     <span class="form__text">Дом</span>
                                     <input type="text" class="form__input" name="house" required>
-                                    <div class="eror"></div>
                                 </label>
                                 <label class="form__label">
                                     <span class="form__text">Корпус</span>
@@ -458,7 +454,7 @@
                             <div class="form__row form__row_coment">
                                 <label class="form__label">
                                     <span class="form__text">Коментарий</span>
-                                    <textarea name="comment" class="form__field"></textarea>
+                                    <textarea name="comment" class="form__field" required></textarea>
                                 </label> 
                             </div>
                             <div class="form__row form__row_radio">
@@ -567,6 +563,13 @@
                 <link rel="stylesheet" href="" class="pagination__link">
             </li>
         </ul>
+    </div>
+
+    <div class="inner">
+        <div class="modal">
+            <div class="modal__send"></div>
+            <button type="submit" class="btn btn_delivery" id = "btn">Закрыть</button>
+        </div>
     </div>
     <script src="/javaScript/nav.js"></script>
     <script src="/javaScript/menu.js"></script>

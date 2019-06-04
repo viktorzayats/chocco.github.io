@@ -1,0 +1,17 @@
+.modal {
+    max-width: rem(300px);
+    box-shadow: 0 0 rem(40px) rgba(0, 0, 1, 0.22);
+    background-color: #ffffff;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: rem(18px);
+    color: #000000;
+    padding: rem(38px) rem(60px);
+}
+
+.modal__send {
+    margin-bottom: rem(20px);
+    text-align: center;
+}

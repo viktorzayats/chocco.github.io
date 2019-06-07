@@ -1,16 +1,3 @@
-.map {
-    background: url('/images/map.png') no-repeat;
-    background-size: cover;
-}
-
-.map__logo {
-    width: rem(46px);
-    height: rem(57px);
-    background: url('/images/logo/1.png') no-repeat;
-    position: absolute;
-}
-
-.map__logo_1 {
-    left: rem(437px);
-    bottom: rem(135px);
+.map__wrap {
+    height: 100%;
 }

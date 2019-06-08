@@ -1,6 +1,10 @@
 .caption {
     text-align: center;
     margin-bottom: rem(60px);
+
+    @include tablets {
+        margin-bottom: rem(30px);
+    }
 }
 
 .slogan {

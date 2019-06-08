@@ -4,7 +4,8 @@
 
     @include tablets {
         height: 100%;
-        padding: 20% 0;
+        // padding: 20% 0;
+        line-height: 1.2;
     }
 
 
@@ -97,6 +98,10 @@
     justify-content: center;
     align-items: center;
     margin-bottom: rem(35px);
+
+    @include tablets {
+        margin-bottom: rem(25px);
+    }
 }
 
 .features__icon-men {
@@ -119,6 +124,10 @@
     color: #000000;
     font-size: rem(27px);
     font-weight: 700;
+
+    @include tablets {
+        margin-bottom: rem(20px);
+    }
 }
 
 .features__desc {

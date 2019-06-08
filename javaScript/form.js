@@ -18,16 +18,20 @@ myForm.addEventListener('submit', function (e) {
 
       .then(function (formData){
          if(formData.status || formData.status == 0) {
+            const wrapper = document.querySelector('.wrapper');
             var send = modal.querySelector('.modal__send');
             send.textContent = formData.message;
             inner.classList.add('inner_show');
             myForm.reset();
+            wrapper.style.height = 100 + '%';
+
          }
       })
 });
 
 closeModal.addEventListener('click', function(e) {
    e.preventDefault();
-
+   const wrapper = document.querySelector('.wrapper');
    inner.classList.remove('inner_show');
+   wrapper.style.height = 'auto';
 });

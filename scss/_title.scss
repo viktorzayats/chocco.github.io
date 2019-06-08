@@ -24,6 +24,10 @@
 
 .title_black {
     margin-bottom: rem(23px);
+
+    @include tablets {
+        margin-bottom: rem(10px);
+    }
 }
 
 .title_team {

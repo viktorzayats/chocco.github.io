@@ -1,50 +1,90 @@
 $(function() {
+    const sections = $('.section');
+    const display = $('.maincontent');
+    let inscroll = false;
 
-    var pagination = function(index) {
-        $('.pagination__list')
-            .find('.pagination__item')
-            .eq(index)
+    const paginationActive = paginationItemIndex => {
+        $('.pagination__item')
+            .eq(paginationItemIndex)
             .addClass('active')
             .siblings()
-            .removeClass('active')
+            .removeClass('active');
     };
 
-    var scroll = function (container, pageNum) {
-        var pages = container.find('.section'),
-            activePage = pages.filter('.section_active'),
-            reqPage = pages.eq(pageNum),
-            pageIndex = reqPage.index(),
-            durations = 600;
-            
+    const performTransition = sectionEq => {
+        if (inscroll) return;
 
-            pages.animate({
-                'top' : -pageIndex * 100 + 'vh'
-            },durations, function() {
-                activePage.removeClass('section_active');
-                reqPage.addClass('section_active');
-            });
-    }
+        inscroll = true;
+        const position = `${sectionEq * -100}%`;
 
-    $('.section').on('wheel', function(e) {
-        e.preventDefault();
-        var $this = $(this),
-            container = $('.wrapper'),
-            index = $this.index();
+        sections
+            .eq(sectionEq)
+            .addClass('section_active')
+            .siblings()
+            .removeClass('section_active');
 
-            scroll(container, index);
+        display.css({
+            transform: `translateY(${position})`
+        });
 
-            console.log(index);
-            
-    });
+        paginationActive(sectionEq);
 
-    $('.pagination__item').on('click', function(e) {
-        e.preventDefault();
-        var $this = $(this),
-            container = $('.wrapper'),
-            index = $this.index();
+        setTimeout(() => {
+            inscroll = false
+        }, 1000 + 300);
+    };
 
-            scroll(container, index);
-            pagination(index);
-    });
+    const scrollToSection = direction => {
+        const activeSection = sections.filter('.section_active');
+        const nextSection = activeSection.next();
+        const prevSection = activeSection.prev();
+
+        if (direction === 'next' && nextSection.length) {
+             performTransition(nextSection.index());
+        }
+
+        if (direction === 'prev' && prevSection.length) {
+            performTransition(prevSection.index());
+       }
+
+    } 
+
+    $('.wrapper').on('wheel', e => {
+        const deltaY = e.originalEvent.deltaY;
         
+        if (deltaY > 0) {
+            scrollToSection('next');
+        }
+
+        if (deltaY < 0) {
+            scrollToSection('prev');
+        }
+    });
+
+    $(document).on('keydown', e => { 
+        switch (e.keyCode) {
+            case 40:
+                scrollToSection('next');
+                break;
+            case 38:
+                scrollToSection('prev');
+                break;
+        }
+    });
+
+    $('[data-scroll-to]').on('click', e => {
+        e.preventDefault();
+
+        const target = $(e.currentTarget).attr('data-scroll-to');
+
+        performTransition(target);
+    });
+
+    $(window).swipe ({
+        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+             const nextOrPrev = direction === "up" ? 'next' : 'prev';
+             scrollToSection(nextOrPrev);
+          }
+    });
+
 });

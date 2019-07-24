@@ -5,6 +5,10 @@
     @include tablets {
         margin-bottom: rem(30px);
     }
+
+    @include phones {
+        margin-bottom: rem(10px);
+    }
 }
 
 .slogan {

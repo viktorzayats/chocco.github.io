@@ -29,18 +29,10 @@
     }
 
     @include phones {
-        padding: 20% 0;
+        padding: 0;
         position: relative;
         z-index: 2;
     }
-}
-
-
-.title_reviews {
-    font-size: 4rem(8px);
-    color: #0d0d0d;
-    text-align: center;
-    margin-bottom: rem(55px);
 }
 
 .reviews__content {
@@ -58,6 +50,10 @@
         flex-direction: column;
         align-items: center;
         background-image: url('/images/bush-tablets.png');
+    }
+
+    @include phones {
+        margin-bottom: rem(10px);
     }
 
 

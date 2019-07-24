@@ -1,9 +1,5 @@
 .slider {
     background-color: #f8faf9;
-    
-    @include phones {
-        height: 100%;
-    }
 }
 
 .slider__container {

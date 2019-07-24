@@ -1,5 +1,6 @@
 .content {
     display: flex;
+    position: relative;
 
     @include tablets {
         margin-top: auto;

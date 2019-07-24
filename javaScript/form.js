@@ -23,8 +23,7 @@ myForm.addEventListener('submit', function (e) {
             send.textContent = formData.message;
             inner.classList.add('inner_show');
             myForm.reset();
-            wrapper.style.height = 100 + '%';
-
+           // wrapper.style.height = 100 + '%';
          }
       })
 });
@@ -33,5 +32,4 @@ closeModal.addEventListener('click', function(e) {
    e.preventDefault();
    const wrapper = document.querySelector('.wrapper');
    inner.classList.remove('inner_show');
-   wrapper.style.height = 'auto';
 });

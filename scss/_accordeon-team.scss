@@ -34,6 +34,10 @@
         @include tablets {
             margin-bottom: rem(35px);
         }
+
+        @include phones {
+            margin-bottom: rem(15px);
+        }
     }
 
     @include tablets {
@@ -45,6 +49,11 @@
     height: rem(289px);
     overflow: hidden;
     margin-bottom: rem(25px);
+
+    @include phones {
+        height: rem(250px);
+        margin-bottom: rem(15px);
+    }
 }
 
 .accordeon-team__photo {

@@ -78,6 +78,7 @@ $(function() {
         const target = $(e.currentTarget).attr('data-scroll-to');
 
         performTransition(target);
+        $('.nav').removeClass('nav_active');
     });
 
     $(window).swipe ({

@@ -44,10 +44,11 @@
             background: url(/images/3-layers-768.png) no-repeat;
             top: 20%;
             right: 20%;
+            background-size: cover;
         }
 
         @include phones {
-            right: 0;
+            right: 10%;
         }
     }
 

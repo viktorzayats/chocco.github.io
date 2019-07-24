@@ -373,10 +373,10 @@ html {
   font-size: 16px; }
   @media (max-width: 768px) {
     html {
-      font-style: 15px; } }
+      font-size: 15px; } }
   @media (max-width: 480px) {
     html {
-      font-style: 14px; } }
+      font-size: 14px; } }
 
 html, body {
   width: 100%;
@@ -486,10 +486,11 @@ img {
         height: 17.5rem;
         background: url(/images/3-layers-768.png) no-repeat;
         top: 20%;
-        right: 20%; } }
+        right: 20%;
+        background-size: cover; } }
     @media (max-width: 480px) {
       .greating__container::before {
-        right: 0; } }
+        right: 10%; } }
   .greating__container::after {
     content: "";
     width: 3.75rem;
@@ -576,8 +577,8 @@ img {
       line-height: 4.5rem; } }
 
 .nav__close {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.5625rem;
+  height: 1.5625rem;
   background: url("/images/Закрыть.png") no-repeat;
   position: absolute;
   top: 1.875rem;
@@ -591,7 +592,8 @@ img {
 .logo {
   background: url("/images/logo/header-logo.png") no-repeat;
   width: 3.375rem;
-  height: 2.625rem; }
+  height: 2.625rem;
+  background-size: cover; }
 
 .address {
   font-style: normal;
@@ -671,11 +673,14 @@ img {
   margin-bottom: 1.4375rem; }
   @media (max-width: 768px) {
     .title_black {
-      margin-bottom: 0.625rem; } }
+      margin-bottom: 0.3125rem; } }
 
 .title_team {
   margin-bottom: 4.375rem;
   text-align: center; }
+  @media (max-width: 480px) {
+    .title_team {
+      margin-bottom: 1.25rem; } }
 
 .title_menu {
   color: #fff;
@@ -687,6 +692,9 @@ img {
   margin-bottom: 3.375rem;
   color: #0f5a47;
   text-align: center; }
+  @media (max-width: 480px) {
+    .title_form {
+      margin-bottom: 0.9375rem; } }
 
 .title_slider {
   font-size: 2.25rem;
@@ -695,11 +703,24 @@ img {
   @media (max-width: 768px) {
     .title_slider {
       font-size: 1.875rem; } }
+  @media (max-width: 480px) {
+    .title_slider {
+      margin-bottom: 0.625rem; } }
+
+.title_reviews {
+  font-size: 4rem 8px;
+  color: #0d0d0d;
+  text-align: center;
+  margin-bottom: 3.4375rem; }
+  @media (max-width: 480px) {
+    .title_reviews {
+      margin-bottom: 0.9375rem; } }
 
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  position: relative; }
   @media (max-width: 768px) {
     .content {
       margin-top: auto;
@@ -834,7 +855,7 @@ img {
   @media (max-width: 768px) {
     .features {
       height: 100%;
-      line-height: 1.2; } }
+      line-height: 1; } }
   .features::after {
     content: "";
     width: 10.0625rem;
@@ -904,6 +925,9 @@ img {
       margin-bottom: 5%; }
       .features__item:last-child {
         margin-bottom: 0; } }
+  @media (max-width: 480px) {
+    .features__item {
+      margin-bottom: 3%; } }
 
 .features__aside {
   text-align: center; }
@@ -926,18 +950,11 @@ img {
   @media (max-width: 768px) {
     .features__pic {
       margin-bottom: 1.5625rem; } }
-
-.features__icon-men {
-  max-width: 4.125rem;
-  max-height: 4.3125rem; }
-
-.features__icon-smile {
-  max-width: 4.375rem;
-  max-height: 4.3125rem; }
-
-.features__icon-hand {
-  max-width: 4.6875rem;
-  max-height: 4rem; }
+  @media (max-width: 480px) {
+    .features__pic {
+      width: 6.5625rem;
+      height: 6.5625rem;
+      margin-bottom: 0.625rem; } }
 
 .features__subtitle {
   margin-bottom: 1.875rem;
@@ -947,6 +964,9 @@ img {
   @media (max-width: 768px) {
     .features__subtitle {
       margin-bottom: 1.25rem; } }
+  @media (max-width: 480px) {
+    .features__subtitle {
+      margin-bottom: 0.625rem; } }
 
 .features__desc {
   font-size: 1.125rem;
@@ -976,6 +996,9 @@ img {
   @media (max-width: 768px) {
     .caption {
       margin-bottom: 1.875rem; } }
+  @media (max-width: 480px) {
+    .caption {
+      margin-bottom: 0.625rem; } }
 
 .slogan {
   color: #666666;
@@ -1007,15 +1030,9 @@ img {
     padding: 5% 10%; } }
 @media (max-width: 480px) {
   .reviews__container {
-    padding: 20% 0;
+    padding: 0;
     position: relative;
     z-index: 2; } }
-
-.title_reviews {
-  font-size: 4rem 8px;
-  color: #0d0d0d;
-  text-align: center;
-  margin-bottom: 3.4375rem; }
 
 .reviews__content {
   background-color: #f8faf9;
@@ -1039,6 +1056,9 @@ img {
           -ms-flex-align: center;
               align-items: center;
       background-image: url("/images/bush-tablets.png"); } }
+  @media (max-width: 480px) {
+    .reviews__content {
+      margin-bottom: 0.625rem; } }
   .reviews__content::before {
     content: "";
     width: 6.25rem;
@@ -1239,6 +1259,9 @@ img {
   @media (max-width: 768px) {
     .accordeon-team__item:nth-child(-n+2) {
       margin-bottom: 2.1875rem; } }
+  @media (max-width: 480px) {
+    .accordeon-team__item:nth-child(-n+2) {
+      margin-bottom: 0.9375rem; } }
   @media (max-width: 768px) {
     .accordeon-team__item {
       -ms-flex-preferred-size: 32%;
@@ -1248,6 +1271,10 @@ img {
   height: 18.0625rem;
   overflow: hidden;
   margin-bottom: 1.5625rem; }
+  @media (max-width: 480px) {
+    .accordeon-team__avatar {
+      height: 15.625rem;
+      margin-bottom: 0.9375rem; } }
 
 .accordeon-team__photo {
   -o-object-fit: cover;
@@ -1387,8 +1414,8 @@ img {
       transition: 0s; } }
 
 .accordeon-menu__close {
-  width: 1.125rem;
-  height: 1.125rem;
+  width: 1.4375rem;
+  height: 1.4375rem;
   background: url("/images/Закрыть.png") no-repeat;
   position: absolute;
   right: 0.625rem;
@@ -1766,9 +1793,6 @@ img {
 
 .slider {
   background-color: #f8faf9; }
-  @media (max-width: 480px) {
-    .slider {
-      height: 100%; } }
 
 .slider__container {
   -webkit-box-orient: horizontal;
@@ -1797,7 +1821,7 @@ img {
               align-items: flex-start; } }
   @media (max-width: 480px) {
     .slide {
-      padding: 4.375rem 0; } }
+      padding: 0; } }
 
 .slide__arrow-left, .slide__arrow-right {
   display: -webkit-box;
@@ -1880,6 +1904,9 @@ img {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
+  @media (max-width: 480px) {
+    .chocco-card__left {
+      margin-bottom: 0.9375rem; } }
 
 @media (max-width: 768px) {
   .chocco-card__right {
@@ -1890,12 +1917,18 @@ img {
 
 .chocco-card__consist {
   margin-bottom: 2.1875rem; }
+  @media (max-width: 480px) {
+    .chocco-card__consist {
+      margin-bottom: 0.625rem; } }
 
 .chocco-card__subtitle {
   font-size: 1.5rem;
   font-weight: 500;
   color: #323232;
   margin-bottom: 1.5625rem; }
+  @media (max-width: 480px) {
+    .chocco-card__subtitle {
+      margin-bottom: 0.625rem; } }
 
 .chocco-card__desc {
   color: #666666;
@@ -1917,6 +1950,9 @@ img {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
+  @media (max-width: 480px) {
+    .chocco-card__compaund {
+      margin-bottom: 0.625rem; } }
 
 .chocco-card__order {
   display: -webkit-box;
@@ -2023,4 +2059,82 @@ img {
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s; }
+
+.how-works {
+  background-color: #f8faf9;
+  text-align: center; }
+
+.how-works__container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.player {
+  max-width: 36.875rem;
+  width: 100%; }
+
+.player__video {
+  max-width: 36.875rem;
+  width: 100%; }
+
+.player__controls, .player__line, .player__volume-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.player__controls {
+  background-color: #3e3e3e;
+  padding: 0.375rem 1.1875rem;
+  position: relative;
+  bottom: 2%; }
+
+.player__playpause, .player__muted {
+  width: 1rem;
+  height: 1.375rem;
+  margin-right: 3%; }
+
+.play, .muted {
+  opacity: .2; }
+
+.player__playpause {
+  background: url("/images/icons/play_gray.png") no-repeat; }
+
+.player__line {
+  height: 0.25rem;
+  background-color: #626262;
+  max-width: 24.875rem;
+  width: 100%;
+  margin-right: 8%;
+  position: relative; }
+
+.player__progress {
+  left: 0; }
+
+.player__progress, .player__volume-height {
+  width: 0.6875rem;
+  height: 0.6875rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #626262;
+  position: absolute; }
+
+.player__muted {
+  background: url("/images/icons/volum_gray.png") no-repeat; }
+
+.player__volume-line {
+  max-width: 3.3125rem;
+  width: 100%;
+  height: 4px;
+  background-color: #626262;
+  position: relative; }
+
+.player__volume-height {
+  left: 100%; }
+
+.player__line:hover, .player__volume-line:hover {
+  height: 6px; }
+
 /*# sourceMappingURL=main.css.map */

@@ -4,8 +4,7 @@
 
     @include tablets {
         height: 100%;
-        // padding: 20% 0;
-        line-height: 1.2;
+        line-height: 1;
     }
 
 
@@ -81,6 +80,10 @@
             margin-bottom: 0;
         }
     }
+
+    @include phones {
+        margin-bottom: 3%;
+    }
 }
 
 
@@ -102,21 +105,12 @@
     @include tablets {
         margin-bottom: rem(25px);
     }
-}
 
-.features__icon-men {
-    max-width: rem(66px);
-    max-height: rem(69px);
-}
-
-.features__icon-smile {
-    max-width: rem(70px);
-    max-height: rem(69px);
-}
-
-.features__icon-hand {
-    max-width: rem(75px);
-    max-height: rem(64px);
+    @include phones {
+        width: rem(105px);
+        height: rem(105px);
+        margin-bottom: rem(10px);
+    }
 }
 
 .features__subtitle {
@@ -127,6 +121,10 @@
 
     @include tablets {
         margin-bottom: rem(20px);
+    }
+
+    @include phones {
+        margin-bottom: rem(10px);
     }
 }
 

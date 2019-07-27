@@ -1,0 +1,23 @@
+@function rem($px) {
+    @return $px / 16px+0rem;
+  }
+  
+  //Media
+  
+  @mixin tablets {
+    @media (max-width: $tablets) {
+      @content;
+    }
+  }
+  
+  @mixin phones {
+    @media (max-width: $phones) {
+      @content;
+    }
+  }
+
+  @mixin phones360 {
+    @media (max-width: $phones360) {
+      @content;
+    }
+  }

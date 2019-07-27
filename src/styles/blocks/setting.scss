@@ -1,0 +1,86 @@
+html {
+    font-size: 16px;
+    
+    @include tablets {
+        font-size: 15px;
+    }
+
+    @include phones {
+        font-size: 14px;
+    }
+
+    @include phones360 {
+        font-size: 13px;
+    }
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Alegreya Sans";
+    margin: 0;
+    padding: 0;
+    line-height: 1.42;
+}
+
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 95%;
+    max-width: rem(940px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}

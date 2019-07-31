@@ -1,1 +1,1 @@
-# chocco.github.io
+#Это одностраничный сайт магазина, она же задание от школы онлайн образования loftschool. ###В этом проекте есть техники вёрстки javascript, jquery, scss, html, BAM-naming. Сборка gulp.

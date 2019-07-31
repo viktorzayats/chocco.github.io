@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "jquery": "^3.4.1",
+    "jquery-touchswipe": "^1.6.19",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
@@ -32,7 +33,7 @@
   },
   "scripts": {
     "gulp": "cross-env NODE_ENV=dev gulp",
-    "build": "cross-env NODE_ENV=prod gulp"
+    "build": "cross-env NODE_ENV=prod gulp build"
   },
   "repository": {
     "type": "git",

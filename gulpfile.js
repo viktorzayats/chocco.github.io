@@ -60,7 +60,7 @@ task('styles', () => {
        // .pipe(px2rem())
         .pipe(
             gulpif(
-                env === 'dev',
+                env === 'prod',
                 autoprefixer({ overrideBrowserslist: ['last 2 versions'], cascade: false })
             )
         )
@@ -73,6 +73,7 @@ task('styles', () => {
 
 const libs = [
     'node_modules/jquery/dist/jquery.js',
+    'node_modules/jquery-touchswipe/jquery.touchSwipe.js',
     'src/scripts/*.js'
 ]
 
@@ -117,12 +118,28 @@ task('server', ( ) => {
     });
 });
 
-watch('./src/styles/**/*.scss', series('styles'));
-watch('./src/scripts/*.js', series('scripts'));
-watch('./src/*.html', series('copy:html'));
-watch('./src/images/icons/*.svg', series('icons'));
-watch('./src/images/*.*', series('images'));
+task('watch', () => {
+    watch('./src/styles/**/*.scss', series('styles'));
+    watch('./src/scripts/*.js', series('scripts'));
+    watch('./src/*.html', series('copy:html'));
+    watch('./src/images/icons/*.svg', series('icons'));
+    watch('./src/images/*.*', series('images'));
+});
+
+
 
 task(
     'default', 
-    series('clean', parallel('copy:fonts', 'copy:html', 'styles', 'scripts', 'icons', 'images'), 'server'));
+    series(
+        'clean', 
+        parallel('copy:fonts', 'copy:html', 'styles', 'scripts', 'icons', 'images'),
+        parallel('watch', 'server')
+    )
+);
+
+task('build',
+    series(
+        'clean', 
+        parallel('copy:fonts', 'copy:html', 'styles', 'scripts', 'icons', 'images')
+    )
+);

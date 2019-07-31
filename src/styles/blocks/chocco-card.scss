@@ -23,6 +23,10 @@
     @include phones {
         margin-bottom: rem(15px);
     }
+
+    @include phones375 {
+        margin-bottom: 1%;
+    }
 }
 
 .chocco-card__right {
@@ -38,6 +42,11 @@
     @include phones {
         margin-bottom: rem(10px);
     }
+
+    @include phones {
+        margin-bottom: 1%;
+        line-height: 1;
+    }
 }
 
 .chocco-card__subtitle {
@@ -48,6 +57,10 @@
 
     @include phones {
         margin-bottom: rem(10px);
+    }
+
+    @include phones375 {
+        margin-bottom: 1%;
     }
 }
 
@@ -96,8 +109,9 @@
 }
 
 .chocco-card__price {
-    font-size: 60px;
+    font-size: rem(60px);
     font-weight: 300;
     text-transform: uppercase;
     margin-right: rem(30px);
+
 }

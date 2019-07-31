@@ -38,6 +38,10 @@
     @include phones {
         margin-bottom: rem(20px);
     }
+
+    @include phones375 {
+        margin-bottom: 1%;
+    }
 }
 
 .title_menu {
@@ -55,6 +59,10 @@
     @include phones {
         margin-bottom: rem(15px);
     }
+
+    @include phones375 {
+        margin-bottom: 1%;
+    }
 }
 
 .title_slider {
@@ -68,6 +76,10 @@
 
     @include phones {
         margin-bottom: 1%;
+    }
+
+    @include phones375 {
+        line-height: 1;
     }
 }
 

@@ -16,8 +16,8 @@
     }
   }
 
-  @mixin phones360 {
-    @media (max-width: $phones360) {
+  @mixin phones375 {
+    @media (max-width: $phones375) {
       @content;
     }
   }

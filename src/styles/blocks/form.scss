@@ -24,6 +24,10 @@
     display: flex;
     margin-bottom: rem(20px);
     flex-wrap: wrap;
+
+    @include phones375 {
+        margin-bottom: 1%;
+    }
 }
 
 .form__row_radio {

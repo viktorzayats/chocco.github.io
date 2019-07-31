@@ -16,7 +16,7 @@
 .slide__arrow-left, .slide__arrow-right {
     display: flex;
     min-width: rem(13px);
-    height: rem(28px);
+    height: rem(32px);
     background: url('/images/arrow-scroll.png') no-repeat;
     position: absolute;
     
@@ -68,6 +68,4 @@
 .slide__item {
     flex: 0 0 100%;
     max-width: 100%;
-    
-    
 }

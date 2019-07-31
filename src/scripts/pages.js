@@ -82,9 +82,10 @@ $(function() {
     });
 
     $(window).swipe ({
-        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-             const nextOrPrev = direction === "up" ? 'next' : 'prev';
-             scrollToSection(nextOrPrev);
+
+        swipe:function(event, direction, distance, duration, fingerCount, fingerData, allowPageScroll) {
+            const nextOrPrev = direction === "up" ? 'next' : 'prev';
+            scrollToSection(nextOrPrev);
           }
     });
 

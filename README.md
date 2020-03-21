@@ -2,4 +2,4 @@
 
 
 Что бы скачать для просмотра:
-git clone https://github.com/viktorzayats/Afrodita.git "site" (site - папка в которую скопируется сайт)
+git clone https://github.com/viktorzayats/chocco.git "site" (site - папка в которую скопируется сайт)
